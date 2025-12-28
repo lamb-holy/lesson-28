@@ -4,46 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        button {
-            padding: 15px 30px;
-            background-color: purple;
-            color: white;
-            border: none;
-            transition-property: background-color;
-            transition-duration: 0.3s;
-        }
-
-        button:hover {
-            background-color: aquamarine;
-            padding: 20px 40;
-        }
-
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: blueviolet;
-            margin: 10px;
-            transition: transform 0.6s;
-        }
-
-        .linear {
-            transition-timing-function: linear;
-        }
-
-        .ease {
-            transition-timing-function: ease-in-out;
-        }
-
-        .box:hover {
-            transform: translateX(100px);
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button>click</button>
-    <div class="box linear"></div>
-    <div class="box ease"></div>
+    <header>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <h1>Creative Studio</h1>
+                <p>Ми створюємо сучасні сайти</p>
+                <button class="zamovyty">Замовити проєкт</button>
+            </div>            
+        </section>
+        <section>
+            <div class="container">
+                <div class="categoties">
+                    <button class="categories-item">Design</button>
+                    <button class="categories-item">Development</button>
+                    <button class="categories-item">Branding</button>
+                </div>
+                <div class="box-holder">
+                    <div class="box">
+                        <div class="overlay">Project 1</div>
+                    </div>
+                    <div class="box">
+                        <div class="overlay">Project 2</div>
+                    </div>
+                    <div class="box">
+                        <div class="overlay">Project 3</div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </main>
+    <footer>
+        <div class="icon"><i class="bi bi-star-fill"></i></div>
+        <div class="icon"><i class="bi bi-envelope"></i></div>
+        <div class="icon"><i class="bi bi-gear"></i></div>
+    </footer>
 </body>
 </html>
